@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847EFE1F29EEEF5B005CC7FE /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847EFE1E29EEEF5B005CC7FE /* WebView.swift */; };
+		84918C6F29E2F92000EE269D /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84918C6E29E2F92000EE269D /* NewsModel.swift */; };
+		84918C7929E435C300EE269D /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84918C7829E435C300EE269D /* MainTableView.swift */; };
+		84918C7B29E435F900EE269D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84918C7A29E435F900EE269D /* DetailView.swift */; };
+		84918C9D29EAE29D00EE269D /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84918C9C29EAE29D00EE269D /* CellModel.swift */; };
 		84AEC0BA29CC645900D211DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0B929CC645900D211DF /* AppDelegate.swift */; };
 		84AEC0BC29CC645900D211DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0BB29CC645900D211DF /* SceneDelegate.swift */; };
-		84AEC0BE29CC645900D211DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0BD29CC645900D211DF /* ViewController.swift */; };
+		84AEC0BE29CC645900D211DF /* NetworkServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0BD29CC645900D211DF /* NetworkServiceController.swift */; };
 		84AEC0C129CC645900D211DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AEC0BF29CC645900D211DF /* Main.storyboard */; };
 		84AEC0C429CC645900D211DF /* YanPractice23_03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0C229CC645900D211DF /* YanPractice23_03.xcdatamodeld */; };
 		84AEC0C629CC645D00D211DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AEC0C529CC645D00D211DF /* Assets.xcassets */; };
@@ -17,10 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		847EFE1E29EEEF5B005CC7FE /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		84918C6E29E2F92000EE269D /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		84918C7829E435C300EE269D /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		84918C7A29E435F900EE269D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		84918C9C29EAE29D00EE269D /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		84AEC0B629CC645900D211DF /* YanPractice23.03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YanPractice23.03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AEC0B929CC645900D211DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84AEC0BB29CC645900D211DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84AEC0BD29CC645900D211DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84AEC0BD29CC645900D211DF /* NetworkServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceController.swift; sourceTree = "<group>"; };
 		84AEC0C029CC645900D211DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84AEC0C329CC645900D211DF /* YanPractice23_03.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YanPractice23_03.xcdatamodel; sourceTree = "<group>"; };
 		84AEC0C529CC645D00D211DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84918C7129E4349A00EE269D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84918C6E29E2F92000EE269D /* NewsModel.swift */,
+				84918C9C29EAE29D00EE269D /* CellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84918C7229E434B100EE269D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84AEC0BD29CC645900D211DF /* NetworkServiceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84918C7329E434E500EE269D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84918C7829E435C300EE269D /* MainTableView.swift */,
+				847EFE1E29EEEF5B005CC7FE /* WebView.swift */,
+				84918C7A29E435F900EE269D /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		84AEC0AD29CC645900D211DF = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +95,11 @@
 		84AEC0B829CC645900D211DF /* YanPractice23.03 */ = {
 			isa = PBXGroup;
 			children = (
+				84918C7129E4349A00EE269D /* Models */,
+				84918C7329E434E500EE269D /* Views */,
+				84918C7229E434B100EE269D /* Controllers */,
 				84AEC0B929CC645900D211DF /* AppDelegate.swift */,
 				84AEC0BB29CC645900D211DF /* SceneDelegate.swift */,
-				84AEC0BD29CC645900D211DF /* ViewController.swift */,
 				84AEC0BF29CC645900D211DF /* Main.storyboard */,
 				84AEC0C529CC645D00D211DF /* Assets.xcassets */,
 				84AEC0C729CC645D00D211DF /* LaunchScreen.storyboard */,
@@ -141,10 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AEC0BE29CC645900D211DF /* ViewController.swift in Sources */,
+				84AEC0BE29CC645900D211DF /* NetworkServiceController.swift in Sources */,
 				84AEC0BA29CC645900D211DF /* AppDelegate.swift in Sources */,
 				84AEC0BC29CC645900D211DF /* SceneDelegate.swift in Sources */,
+				84918C9D29EAE29D00EE269D /* CellModel.swift in Sources */,
 				84AEC0C429CC645900D211DF /* YanPractice23_03.xcdatamodeld in Sources */,
+				84918C6F29E2F92000EE269D /* NewsModel.swift in Sources */,
+				847EFE1F29EEEF5B005CC7FE /* WebView.swift in Sources */,
+				84918C7929E435C300EE269D /* MainTableView.swift in Sources */,
+				84918C7B29E435F900EE269D /* DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +338,13 @@
 				DEVELOPMENT_TEAM = AZ584T93HH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YanPractice23.03/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = News01;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,11 +368,13 @@
 				DEVELOPMENT_TEAM = AZ584T93HH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YanPractice23.03/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = News01;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
