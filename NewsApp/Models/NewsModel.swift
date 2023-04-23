@@ -3,7 +3,8 @@
 //  YanPractice23.03
 //
 //  Created by admin on 09.04.2023.
-//
+// модель
+
 
 import Foundation
 import UIKit

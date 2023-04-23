@@ -16,7 +16,7 @@
 		84AEC0BC29CC645900D211DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0BB29CC645900D211DF /* SceneDelegate.swift */; };
 		84AEC0BE29CC645900D211DF /* NetworkServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0BD29CC645900D211DF /* NetworkServiceController.swift */; };
 		84AEC0C129CC645900D211DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AEC0BF29CC645900D211DF /* Main.storyboard */; };
-		84AEC0C429CC645900D211DF /* YanPractice23_03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0C229CC645900D211DF /* YanPractice23_03.xcdatamodeld */; };
+		84AEC0C429CC645900D211DF /* NewsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84AEC0C229CC645900D211DF /* NewsApp.xcdatamodeld */; };
 		84AEC0C629CC645D00D211DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AEC0C529CC645D00D211DF /* Assets.xcassets */; };
 		84AEC0C929CC645D00D211DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AEC0C729CC645D00D211DF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,7 @@
 		84918C7829E435C300EE269D /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		84918C7A29E435F900EE269D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		84918C9C29EAE29D00EE269D /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
-		84AEC0B629CC645900D211DF /* YanPractice23.03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YanPractice23.03.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AEC0B629CC645900D211DF /* NewsApp_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AEC0B929CC645900D211DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84AEC0BB29CC645900D211DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84AEC0BD29CC645900D211DF /* NetworkServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceController.swift; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		84AEC0C329CC645900D211DF /* YanPractice23_03.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YanPractice23_03.xcdatamodel; sourceTree = "<group>"; };
 		84AEC0C529CC645D00D211DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84AEC0C829CC645D00D211DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84AEC0CA29CC645D00D211DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AEC0CA29CC645D00D211DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = YanPractice23.03/infoplist/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +49,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		843DF56829F44B7200490B90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84AEC0B929CC645900D211DF /* AppDelegate.swift */,
+				84AEC0BB29CC645900D211DF /* SceneDelegate.swift */,
+				84AEC0C529CC645D00D211DF /* Assets.xcassets */,
+				84AEC0CA29CC645D00D211DF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		843DF56929F45DE300490B90 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84AEC0BF29CC645900D211DF /* Main.storyboard */,
+				84AEC0C729CC645D00D211DF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		84918C7129E4349A00EE269D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +99,7 @@
 		84AEC0AD29CC645900D211DF = {
 			isa = PBXGroup;
 			children = (
-				84AEC0B829CC645900D211DF /* YanPractice23.03 */,
+				84AEC0B829CC645900D211DF /* NewsApp */,
 				84AEC0B729CC645900D211DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,34 +107,30 @@
 		84AEC0B729CC645900D211DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84AEC0B629CC645900D211DF /* YanPractice23.03.app */,
+				84AEC0B629CC645900D211DF /* NewsApp_01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84AEC0B829CC645900D211DF /* YanPractice23.03 */ = {
+		84AEC0B829CC645900D211DF /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
 				84918C7129E4349A00EE269D /* Models */,
 				84918C7329E434E500EE269D /* Views */,
 				84918C7229E434B100EE269D /* Controllers */,
-				84AEC0B929CC645900D211DF /* AppDelegate.swift */,
-				84AEC0BB29CC645900D211DF /* SceneDelegate.swift */,
-				84AEC0BF29CC645900D211DF /* Main.storyboard */,
-				84AEC0C529CC645D00D211DF /* Assets.xcassets */,
-				84AEC0C729CC645D00D211DF /* LaunchScreen.storyboard */,
-				84AEC0CA29CC645D00D211DF /* Info.plist */,
-				84AEC0C229CC645900D211DF /* YanPractice23_03.xcdatamodeld */,
+				843DF56929F45DE300490B90 /* Storyboards */,
+				843DF56829F44B7200490B90 /* Resources */,
+				84AEC0C229CC645900D211DF /* NewsApp.xcdatamodeld */,
 			);
-			path = YanPractice23.03;
+			path = NewsApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84AEC0B529CC645900D211DF /* YanPractice23.03 */ = {
+		84AEC0B529CC645900D211DF /* NewsApp_01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84AEC0CD29CC645D00D211DF /* Build configuration list for PBXNativeTarget "YanPractice23.03" */;
+			buildConfigurationList = 84AEC0CD29CC645D00D211DF /* Build configuration list for PBXNativeTarget "NewsApp_01" */;
 			buildPhases = (
 				84AEC0B229CC645900D211DF /* Sources */,
 				84AEC0B329CC645900D211DF /* Frameworks */,
@@ -124,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = YanPractice23.03;
+			name = NewsApp_01;
 			productName = YanPractice23.03;
-			productReference = 84AEC0B629CC645900D211DF /* YanPractice23.03.app */;
+			productReference = 84AEC0B629CC645900D211DF /* NewsApp_01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84AEC0B129CC645900D211DF /* Build configuration list for PBXProject "YanPractice23.03" */;
+			buildConfigurationList = 84AEC0B129CC645900D211DF /* Build configuration list for PBXProject "NewsApp_01" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84AEC0B529CC645900D211DF /* YanPractice23.03 */,
+				84AEC0B529CC645900D211DF /* NewsApp_01 */,
 			);
 		};
 /* End PBXProject section */
@@ -184,7 +200,7 @@
 				84AEC0BA29CC645900D211DF /* AppDelegate.swift in Sources */,
 				84AEC0BC29CC645900D211DF /* SceneDelegate.swift in Sources */,
 				84918C9D29EAE29D00EE269D /* CellModel.swift in Sources */,
-				84AEC0C429CC645900D211DF /* YanPractice23_03.xcdatamodeld in Sources */,
+				84AEC0C429CC645900D211DF /* NewsApp.xcdatamodeld in Sources */,
 				84918C6F29E2F92000EE269D /* NewsModel.swift in Sources */,
 				847EFE1F29EEEF5B005CC7FE /* WebView.swift in Sources */,
 				84918C7929E435C300EE269D /* MainTableView.swift in Sources */,
@@ -337,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZ584T93HH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YanPractice23.03/Info.plist;
+				INFOPLIST_FILE = NewsApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = News01;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -367,7 +383,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AZ584T93HH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YanPractice23.03/Info.plist;
+				INFOPLIST_FILE = NewsApp/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = News01;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -391,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84AEC0B129CC645900D211DF /* Build configuration list for PBXProject "YanPractice23.03" */ = {
+		84AEC0B129CC645900D211DF /* Build configuration list for PBXProject "NewsApp_01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84AEC0CB29CC645D00D211DF /* Debug */,
@@ -400,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84AEC0CD29CC645D00D211DF /* Build configuration list for PBXNativeTarget "YanPractice23.03" */ = {
+		84AEC0CD29CC645D00D211DF /* Build configuration list for PBXNativeTarget "NewsApp_01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84AEC0CE29CC645D00D211DF /* Debug */,
@@ -412,13 +428,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		84AEC0C229CC645900D211DF /* YanPractice23_03.xcdatamodeld */ = {
+		84AEC0C229CC645900D211DF /* NewsApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				84AEC0C329CC645900D211DF /* YanPractice23_03.xcdatamodel */,
 			);
 			currentVersion = 84AEC0C329CC645900D211DF /* YanPractice23_03.xcdatamodel */;
-			path = YanPractice23_03.xcdatamodeld;
+			path = NewsApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
