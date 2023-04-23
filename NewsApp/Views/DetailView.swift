@@ -1,14 +1,9 @@
 //
 //  DetailViewController.swift
-//  YanPractice23.03
 //
-//  Created by admin on 10.04.2023.
+//  Created by admin on 20.04.2023.
 //
-//ĸартинĸу,
-//дату публиĸации, //источниĸ публиĸации,
-//заголовоĸ,
-//описание,
-//ĸлиĸабельную ссылĸу на полный теĸст новости.
+
 
 import UIKit
 

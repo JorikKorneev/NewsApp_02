@@ -1,10 +1,9 @@
 //
 //  CellModel.swift
-//  YanPractice23.03
 //
-//  Created by admin on 15.04.2023.
+//  Created by admin on 20.04.2023.
 //
-
+// Custom cell model
 import UIKit
 
 class NewsCell:  UITableViewCell {

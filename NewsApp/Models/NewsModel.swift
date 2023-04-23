@@ -1,10 +1,10 @@
 //
 //  NewsModel.swift
-//  YanPractice23.03
 //
-//  Created by admin on 09.04.2023.
-// модель
+//  Created by admin on 20.04.2023.
 
+
+// JSON parsing model
 
 import Foundation
 import UIKit

@@ -1,8 +1,7 @@
 //
 //  WebView.swift
-//  YanPractice23.03
 //
-//  Created by admin on 18.04.2023.
+//  Created by admin on 20.04.2023.
 //
 
 import UIKit

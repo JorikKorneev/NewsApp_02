@@ -1,8 +1,7 @@
 //
 //  MainTableView.swift
-//  YanPractice23.03
 //
-//  Created by admin on 10.04.2023.
+//  Created by admin on 20.04.2023.
 //
 
 import UIKit
@@ -18,12 +17,9 @@ class MainTableView: UITableViewController, NetworkServiceDelegate {
     
     func didUpdateData() {
         DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+            self.tableView.reloadData()
+        }
     }
-    
-    
-    
     
     
     override func viewDidLoad() {
@@ -37,15 +33,6 @@ class MainTableView: UITableViewController, NetworkServiceDelegate {
         networkService.delegate = self
         networkService.fetchData()
     }
-    
-    override func viewWillAppear(_ animated: Bool) { // тут не ясно пока
-        super.viewWillAppear(animated)
-        
-        if let indexPath = tableView.indexPathForSelectedRow {
-            tableView.reloadRows(at: [indexPath], with: .none) // счетчик
-        }
-    }
-
 
     
     // MARK: - Table view data source
@@ -89,7 +76,7 @@ class MainTableView: UITableViewController, NetworkServiceDelegate {
         }
     }
 
-    
+        // pull-to-refresh
     @objc func refreshTable() {
         networkService.fetchData()
         tableView.reloadData()
